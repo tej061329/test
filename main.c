@@ -1,0 +1,12 @@
+#include<stdio.h>
+main()
+{
+biggest();
+factorial();
+reverse();
+palindrom();
+bigthree();
+sumoftwo();
+fibannoci();
+sortinga();
+}
