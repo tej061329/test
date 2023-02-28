@@ -12,7 +12,7 @@ pipeline {
         stage('FIRST') {
             steps{
                 sh '''
-                    sleep 6
+                    sleep 3
                     echo "This is a FIRST stage"
                 '''
             }
@@ -21,7 +21,7 @@ pipeline {
         stage('DEPLOY') {
             steps{
                 sh '''
-                    sleep 5
+                    sleep 2
                     echo "This is a DEPLOY stage"
                     exit 0
                 '''
@@ -31,7 +31,7 @@ pipeline {
         stage('TEST') {
             steps{
                 sh '''
-                    sleep 6
+                    sleep 2
                     echo "This is a TEST stage"
                 '''
             }
@@ -42,6 +42,7 @@ pipeline {
                 sh '''
                     sleep 5
                     echo "This is a FINAL stage"
+                    pwd
                     exit 0
                 '''
             }
