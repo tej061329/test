@@ -14,6 +14,7 @@ pipeline {
                 sh '''
                     sleep 3
                     echo "This is a FIRST stage"
+                    uname -a
                 '''
             }
         }
@@ -23,6 +24,7 @@ pipeline {
                 sh '''
                     sleep 2
                     echo "This is a DEPLOY stage"
+                    hostname -i
                     exit 0
                 '''
             }
@@ -33,6 +35,7 @@ pipeline {
                 sh '''
                     sleep 2
                     echo "This is a TEST stage"
+                    whoami
                 '''
             }
         }
