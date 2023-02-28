@@ -9,11 +9,11 @@ pipeline {
                 '''
             }
         }
-        stage('TEST') {
+        stage('FIRST') {
             steps{
                 sh '''
                     sleep 6
-                    echo "This is a TEST stage"
+                    echo "This is a FIRST stage"
                 '''
             }
         }
