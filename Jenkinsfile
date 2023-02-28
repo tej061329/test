@@ -4,7 +4,7 @@ pipeline {
         stage('BUILD') {
             steps{
                  sh '''
-                    cd /var/lib/jenkins/workspace/cpipeline
+                    cd /var/lib/jenkins/workspace/cprograms
                       make ABC.exe
                 '''
             }
