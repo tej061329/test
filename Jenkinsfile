@@ -4,10 +4,11 @@ pipeline {
         stage('BUILD') {
             steps{
                  sh '''
-                    cd /var/lib/jenkins/workspace/pipeline1
+                    cd /var/lib/jenkins/workspace/cpipeline
                       make ABC.exe
                 '''
             }
         }
     }
 }
+
