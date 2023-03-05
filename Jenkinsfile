@@ -4,7 +4,7 @@ stages {
 stage ('BUILD') {
 steps {
 sh '''
-cd /var/lib/jenkins/workspace/cprogram
+cd /var/lib/jenkins/workspace/cprograms
 make ABC.exe
 '''
 }
